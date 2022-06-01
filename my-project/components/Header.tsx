@@ -14,11 +14,12 @@ import {
   MenuIcon,
   SearchIcon,
 } from '@heroicons/react/solid'
-
+// import { signIn, signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
+// import Avatar from './Avatar'
 
 function Header() {
-
+//   const { data: session } = useSession()
 
   return (
     <div className="sticky top-0 z-50 flex bg-white px-4 py-2 shadow-sm">
@@ -62,6 +63,35 @@ function Header() {
         <MenuIcon className="icon" />
       </div>
 
+      {/* {session ? (
+        <div
+          onClick={() => signOut()}
+          className="-m-1 hidden cursor-pointer items-center space-x-2 border border-gray-100 p-2 lg:flex"
+        >
+          <img
+            className="h-5 w-5"
+            src="https://links.papareact.com/23l"
+            alt=""
+          />
+          <div className="flex-1 text-xs">
+            <p className="truncate">{session?.user?.name}</p>
+            <p className="text-gray-400">1 Karma</p>
+          </div>
+          <ChevronDownIcon className="h-5 flex-shrink-0 text-gray-400" />
+        </div>
+      ) : (
+        <div
+          onClick={() => signIn()}
+          className="-m-1 hidden cursor-pointer items-center space-x-2 border border-gray-100 p-2 lg:flex"
+        >
+          <img
+            className="h-5 w-5"
+            src="https://links.papareact.com/23l"
+            alt=""
+          />
+          <p className="text-gray-400">Sign In</p>
+        </div>
+      )} */}
     </div>
   )
 }
