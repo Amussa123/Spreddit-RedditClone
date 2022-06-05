@@ -58,10 +58,6 @@ function Header() {
         <BellIcon className="icon" />
         <PlusIcon className="icon" />
 
-        
-
-
-        
         <SpeakerphoneIcon className="icon" />
       </div>
       <div className="ml-5 flex items-center lg:hidden">
